@@ -2,8 +2,23 @@
 <html>
 <head>
 	<title>xsy_blog</title>
+	<link rel='stylesheet' href="https://yiyeti.cc/usr/themes/veryse/css/gitalk.css">
 </head>
+
 <body>
-	<h1>blog of xsy</h1>
+
+    <div class="gitalk-container"></div>
 </body>
+<script src="https://yiyeti.cc/usr/themes/veryse/css/gitalk.min.js"></script>
+	 <script type="text/javascript">
+          var gitalk = new Gitalk({
+            clientID:  'ad8e8ed5b626ba22a271', 
+            clientSecret: '3344df5fa3e6cf1a94c3cc5194f7faa4a5f7ea90',
+            id: window.location.pathname,
+            repo: 'xsy_blog', 
+            owner: 'Tony-Stark-Plus', 
+            admin: 'Tony-Stark-Plus'
+          })
+          gitalk.render('gitalk-container')
+      </script>
 </html>
